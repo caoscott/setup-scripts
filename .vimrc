@@ -4,8 +4,13 @@ execute pathogen#infect()
 " Auto bracket plugin
 filetype plugin indent on
 
-colorscheme jellybeans
-syntax on
+set t_Co=256
+let g:solarized_termcolors=256
+syntax enable
+set background=dark
+colorscheme solarized
+" colorscheme jellybeans
+" syntax on
 
 " Set a new <leader> character
 let mapleader = ","
@@ -102,29 +107,6 @@ set grepprg=grep\ -nH\ $*
 " 'plaintex' instead of 'tex', which results in vim-latex not being loaded.
 " The following changes the default filetype back to 'tex':
 let g:tex_flavor='latex'
-
-"function Show_Spaces(...)
-"  let @/='\v(\s+$)|( +\ze\t)'
-"  let oldhlsearch=&hlsearch
-"  if !a:0
-"    let &hlsearch=!&hlsearch
-"  else
-"    let &hlsearch=a:1
-"  end
-"  return oldhlsearch
-"endfunction
-
-"function TrimSpaces() range
-"  let oldhlsearch=Show_Spaces(1)
-"  execute a:firstline.",".a:lastline."substitute ///gec"
-"  let &hlsearch=oldhlsearch
-"endfunction
-
-"command -bar -nargs=? Show_Spaces call Show_Spaces(<args>)
-"command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call TrimSpaces()
-nnoremap <F12>     :Show_Spaces 1<CR>
-nnoremap <S-F12>   m`:TrimSpaces<CR>``
-vnoremap <S-F12>   :TrimSpaces<CR>
 
 " Ignore these files when completing names
 set wildignore=.svn,CVS,.git,*.o,*.a,*.class,*.mo,*.la,*.so,*.obj,*.swp,*.jpg,*.png,*.xpm,*.gif,*.pdf,*.bak,*.beam
