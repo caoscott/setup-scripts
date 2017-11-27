@@ -1,3 +1,3 @@
-add-apt-repository ppa:gnome-terminator
+add-apt-repository -y ppa:gnome-terminator
 apt-get update
-apt-get install -f terminator
+apt-get install -y terminator
