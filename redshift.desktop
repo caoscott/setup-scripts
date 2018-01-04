@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=redshift -l 29.566295:-95.614256 -t 5500:3000
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=redshift
+Name=redshift
+Comment[en_US]=Automatically changes screen brightness depending on time of day
+Comment=Automatically changes screen brightness depending on time of day
