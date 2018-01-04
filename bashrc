@@ -9,10 +9,4 @@ export PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND$'\n'}history -a; histor
 export HISTSIZE= 
 export HISTFILESIZE=
 
-export CS231N=~/workspace/cs231n
-export CS342=~/workspace/cs342
-export CS395T=~/workspace/cs395t
-export CS429=~/workspace/cs429
-export CS439=~/workspace/cs439
-export EE379K=~/workspace/ee379k
-export KAGGLE=~/workspace/kaggle
+export SETUP=~/software/setup-scripts
